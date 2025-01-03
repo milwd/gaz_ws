@@ -2,4 +2,4 @@
 source_root_dir = '/root/gaz_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/root/ros_ws/devel;/opt/ros/noetic'.split(';') if '/root/ros_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/root/gaz_ws/devel;/root/ros_ws/devel;/opt/ros/noetic'.split(';') if '/root/gaz_ws/devel;/root/ros_ws/devel;/opt/ros/noetic' != '' else []

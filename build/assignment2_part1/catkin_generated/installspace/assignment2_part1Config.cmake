@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(assignment2_part1_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(assignment2_part1_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/gaz_ws/install/lib;/root/ros_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/gaz_ws/install/lib;/root/gaz_ws/devel/lib;/root/ros_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(assignment2_part1_EXPORTED_TARGETS "")
+set(assignment2_part1_EXPORTED_TARGETS "assignment2_part1_generate_messages_cpp;assignment2_part1_generate_messages_eus;assignment2_part1_generate_messages_lisp;assignment2_part1_generate_messages_nodejs;assignment2_part1_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${assignment2_part1_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND assignment2_part1_EXPORTED_TARGETS ${${assignment2_part1_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "assignment2_part1-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${assignment2_part1_DIR}/${extra})

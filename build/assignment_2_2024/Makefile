@@ -56,28 +56,6 @@ CMAKE_BINARY_DIR = /root/gaz_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -102,6 +80,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -124,16 +113,27 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/rule
-
-# Convenience name for target.
-assignment_2_2024_genpy: assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/rule
-
-.PHONY : assignment_2_2024_genpy
-
-# fast build rule for target.
-assignment_2_2024_genpy/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/build
-.PHONY : assignment_2_2024_genpy/fast
-
-# Convenience name for target.
 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_py.dir/rule:
 	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_py.dir/rule
 .PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_py.dir/rule
@@ -196,291 +181,6 @@ assignment_2_2024_generate_messages_py: assignment_2_2024/CMakeFiles/assignment_
 assignment_2_2024_generate_messages_py/fast:
 	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_py.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_py.dir/build
 .PHONY : assignment_2_2024_generate_messages_py/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-assignment_2_2024_generate_messages_nodejs: assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/rule
-
-.PHONY : assignment_2_2024_generate_messages_nodejs
-
-# fast build rule for target.
-assignment_2_2024_generate_messages_nodejs/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/build
-.PHONY : assignment_2_2024_generate_messages_nodejs/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/rule
-
-# Convenience name for target.
-assignment_2_2024_genlisp: assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/rule
-
-.PHONY : assignment_2_2024_genlisp
-
-# fast build rule for target.
-assignment_2_2024_genlisp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/build
-.PHONY : assignment_2_2024_genlisp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/rule
-
-# Convenience name for target.
-assignment_2_2024_gencpp: assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/rule
-
-.PHONY : assignment_2_2024_gencpp
-
-# fast build rule for target.
-assignment_2_2024_gencpp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/build
-.PHONY : assignment_2_2024_gencpp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-assignment_2_2024_generate_messages_cpp: assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/rule
-
-.PHONY : assignment_2_2024_generate_messages_cpp
-
-# fast build rule for target.
-assignment_2_2024_generate_messages_cpp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/build
-.PHONY : assignment_2_2024_generate_messages_cpp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/rule
-
-# Convenience name for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningResult: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/rule
-
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningResult
-
-# fast build rule for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningResult/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/build
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningResult/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-assignment_2_2024_generate_messages_lisp: assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/rule
-
-.PHONY : assignment_2_2024_generate_messages_lisp
-
-# fast build rule for target.
-assignment_2_2024_generate_messages_lisp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/build
-.PHONY : assignment_2_2024_generate_messages_lisp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/rule
-
-# Convenience name for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningGoal: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/rule
-
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningGoal
-
-# fast build rule for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningGoal/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/build
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningGoal/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/rule
-
-# Convenience name for target.
-assignment_2_2024_geneus: assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/rule
-
-.PHONY : assignment_2_2024_geneus
-
-# fast build rule for target.
-assignment_2_2024_geneus/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/build
-.PHONY : assignment_2_2024_geneus/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/rule
-
-# Convenience name for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/rule
-
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback
-
-# fast build rule for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/build
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_cpp: assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: assignment_2_2024/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf_generate_messages_lisp.dir/build.make assignment_2_2024/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/rule
-
-# Convenience name for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningFeedback: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/rule
-
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningFeedback
-
-# fast build rule for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningFeedback/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/build
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningFeedback/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_eus: assignment_2_2024/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make assignment_2_2024/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 assignment_2_2024/CMakeFiles/assignment_2_2024_gennodejs.dir/rule:
@@ -498,154 +198,34 @@ assignment_2_2024_gennodejs/fast:
 .PHONY : assignment_2_2024_gennodejs/fast
 
 # Convenience name for target.
-assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_py: assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+assignment_2_2024_genlisp: assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_py
+.PHONY : assignment_2_2024_genlisp
 
 # fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make assignment_2_2024/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
+assignment_2_2024_genlisp/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_genlisp.dir/build
+.PHONY : assignment_2_2024_genlisp/fast
 
 # Convenience name for target.
-assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_py: assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+_assignment_2_2024_generate_messages_check_deps_PlanningAction: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/rule
 
-.PHONY : nav_msgs_generate_messages_py
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningAction
 
 # fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_nodejs: assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : nav_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-nav_msgs_generate_messages_nodejs/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
-.PHONY : nav_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_eus: assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-
-.PHONY : nav_msgs_generate_messages_eus
-
-# fast build rule for target.
-nav_msgs_generate_messages_eus/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make assignment_2_2024/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
-.PHONY : nav_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: assignment_2_2024/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make assignment_2_2024/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_nodejs: assignment_2_2024/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make assignment_2_2024/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-assignment_2_2024_generate_messages_eus: assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/rule
-
-.PHONY : assignment_2_2024_generate_messages_eus
-
-# fast build rule for target.
-assignment_2_2024_generate_messages_eus/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/build
-.PHONY : assignment_2_2024_generate_messages_eus/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: assignment_2_2024/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/std_srvs_generate_messages_py.dir/build.make assignment_2_2024/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: assignment_2_2024/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf_generate_messages_cpp.dir/build.make assignment_2_2024/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/rule
-
-# Convenience name for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningActionResult: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/rule
-
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionResult
-
-# fast build rule for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningActionResult/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/build
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionResult/fast
+_assignment_2_2024_generate_messages_check_deps_PlanningAction/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/build
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningAction/fast
 
 # Convenience name for target.
 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionGoal.dir/rule:
@@ -663,49 +243,154 @@ _assignment_2_2024_generate_messages_check_deps_PlanningActionGoal/fast:
 .PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionGoal/fast
 
 # Convenience name for target.
-assignment_2_2024/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf_generate_messages_py.dir/rule
+assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/rule
 
 # Convenience name for target.
-tf_generate_messages_py: assignment_2_2024/CMakeFiles/tf_generate_messages_py.dir/rule
+_assignment_2_2024_generate_messages_check_deps_PlanningActionResult: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/rule
 
-.PHONY : tf_generate_messages_py
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionResult
 
 # fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf_generate_messages_py.dir/build.make assignment_2_2024/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
+_assignment_2_2024_generate_messages_check_deps_PlanningActionResult/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionResult.dir/build
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionResult/fast
 
 # Convenience name for target.
-assignment_2_2024/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-tf_generate_messages_nodejs: assignment_2_2024/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+assignment_2_2024_generate_messages_nodejs: assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/rule
 
-.PHONY : tf_generate_messages_nodejs
+.PHONY : assignment_2_2024_generate_messages_nodejs
 
 # fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf_generate_messages_nodejs.dir/build.make assignment_2_2024/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
+assignment_2_2024_generate_messages_nodejs/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_nodejs.dir/build
+.PHONY : assignment_2_2024_generate_messages_nodejs/fast
 
 # Convenience name for target.
-assignment_2_2024/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_cpp: assignment_2_2024/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/rule
 
-.PHONY : std_srvs_generate_messages_cpp
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback
 
 # fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make assignment_2_2024/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
+_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback.dir/build
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback/fast
+
+# Convenience name for target.
+assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/rule
+
+# Convenience name for target.
+assignment_2_2024_geneus: assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/rule
+
+.PHONY : assignment_2_2024_geneus
+
+# fast build rule for target.
+assignment_2_2024_geneus/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_geneus.dir/build
+.PHONY : assignment_2_2024_geneus/fast
+
+# Convenience name for target.
+assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/rule
+
+# Convenience name for target.
+_assignment_2_2024_generate_messages_check_deps_PlanningGoal: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/rule
+
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningGoal
+
+# fast build rule for target.
+_assignment_2_2024_generate_messages_check_deps_PlanningGoal/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningGoal.dir/build
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningGoal/fast
+
+# Convenience name for target.
+assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/rule
+
+# Convenience name for target.
+_assignment_2_2024_generate_messages_check_deps_PlanningResult: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/rule
+
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningResult
+
+# fast build rule for target.
+_assignment_2_2024_generate_messages_check_deps_PlanningResult/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningResult.dir/build
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningResult/fast
+
+# Convenience name for target.
+assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/rule
+
+# Convenience name for target.
+_assignment_2_2024_generate_messages_check_deps_PlanningFeedback: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/rule
+
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningFeedback
+
+# fast build rule for target.
+_assignment_2_2024_generate_messages_check_deps_PlanningFeedback/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningFeedback.dir/build
+.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningFeedback/fast
+
+# Convenience name for target.
+assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+assignment_2_2024_generate_messages_lisp: assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/rule
+
+.PHONY : assignment_2_2024_generate_messages_lisp
+
+# fast build rule for target.
+assignment_2_2024_generate_messages_lisp/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_lisp.dir/build
+.PHONY : assignment_2_2024_generate_messages_lisp/fast
+
+# Convenience name for target.
+assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+assignment_2_2024_generate_messages_cpp: assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/rule
+
+.PHONY : assignment_2_2024_generate_messages_cpp
+
+# fast build rule for target.
+assignment_2_2024_generate_messages_cpp/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_cpp.dir/build
+.PHONY : assignment_2_2024_generate_messages_cpp/fast
+
+# Convenience name for target.
+assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/rule
+
+# Convenience name for target.
+assignment_2_2024_genpy: assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/rule
+
+.PHONY : assignment_2_2024_genpy
+
+# fast build rule for target.
+assignment_2_2024_genpy/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_genpy.dir/build
+.PHONY : assignment_2_2024_genpy/fast
 
 # Convenience name for target.
 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages.dir/rule:
@@ -723,94 +408,34 @@ assignment_2_2024_generate_messages/fast:
 .PHONY : assignment_2_2024_generate_messages/fast
 
 # Convenience name for target.
-assignment_2_2024/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf_generate_messages_eus.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf_generate_messages_eus.dir/rule
+assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/rule
 
 # Convenience name for target.
-tf_generate_messages_eus: assignment_2_2024/CMakeFiles/tf_generate_messages_eus.dir/rule
+assignment_2_2024_gencpp: assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/rule
 
-.PHONY : tf_generate_messages_eus
+.PHONY : assignment_2_2024_gencpp
 
 # fast build rule for target.
-tf_generate_messages_eus/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf_generate_messages_eus.dir/build.make assignment_2_2024/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
+assignment_2_2024_gencpp/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_gencpp.dir/build
+.PHONY : assignment_2_2024_gencpp/fast
 
 # Convenience name for target.
-assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/rule:
+	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/rule
+.PHONY : assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-tf2_msgs_generate_messages_cpp: assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+assignment_2_2024_generate_messages_eus: assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/rule
 
-.PHONY : tf2_msgs_generate_messages_cpp
+.PHONY : assignment_2_2024_generate_messages_eus
 
 # fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_eus: assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_eus
-
-# fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_nodejs: assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-tf2_msgs_generate_messages_nodejs/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
-.PHONY : tf2_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make assignment_2_2024/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/rule:
-	cd /root/gaz_ws/build && $(MAKE) -f CMakeFiles/Makefile2 assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/rule
-.PHONY : assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/rule
-
-# Convenience name for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningAction: assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/rule
-
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningAction
-
-# fast build rule for target.
-_assignment_2_2024_generate_messages_check_deps_PlanningAction/fast:
-	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/build.make assignment_2_2024/CMakeFiles/_assignment_2_2024_generate_messages_check_deps_PlanningAction.dir/build
-.PHONY : _assignment_2_2024_generate_messages_check_deps_PlanningAction/fast
+assignment_2_2024_generate_messages_eus/fast:
+	cd /root/gaz_ws/build && $(MAKE) -f assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/build.make assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus.dir/build
+.PHONY : assignment_2_2024_generate_messages_eus/fast
 
 # Help Target
 help:
@@ -818,56 +443,31 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... assignment_2_2024_genpy"
-	@echo "... assignment_2_2024_generate_messages_py"
-	@echo "... assignment_2_2024_generate_messages_nodejs"
-	@echo "... assignment_2_2024_genlisp"
-	@echo "... assignment_2_2024_gencpp"
-	@echo "... assignment_2_2024_generate_messages_cpp"
-	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningResult"
-	@echo "... assignment_2_2024_generate_messages_lisp"
-	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningGoal"
 	@echo "... install/strip"
-	@echo "... assignment_2_2024_geneus"
-	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... install/local"
-	@echo "... nav_msgs_generate_messages_cpp"
-	@echo "... edit_cache"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningFeedback"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... assignment_2_2024_gennodejs"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... test"
-	@echo "... assignment_2_2024_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningActionResult"
-	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningActionGoal"
-	@echo "... tf_generate_messages_py"
-	@echo "... tf_generate_messages_nodejs"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... assignment_2_2024_generate_messages"
-	@echo "... tf_generate_messages_eus"
-	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... rebuild_cache"
-	@echo "... tf2_msgs_generate_messages_eus"
-	@echo "... tf2_msgs_generate_messages_nodejs"
-	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... edit_cache"
+	@echo "... assignment_2_2024_generate_messages_py"
+	@echo "... assignment_2_2024_gennodejs"
+	@echo "... assignment_2_2024_genlisp"
+	@echo "... test"
 	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningAction"
+	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningActionGoal"
+	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningActionResult"
+	@echo "... assignment_2_2024_generate_messages_nodejs"
+	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningActionFeedback"
+	@echo "... install"
+	@echo "... assignment_2_2024_geneus"
+	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningGoal"
+	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningResult"
+	@echo "... _assignment_2_2024_generate_messages_check_deps_PlanningFeedback"
+	@echo "... list_install_components"
+	@echo "... assignment_2_2024_generate_messages_lisp"
+	@echo "... assignment_2_2024_generate_messages_cpp"
+	@echo "... assignment_2_2024_genpy"
+	@echo "... assignment_2_2024_generate_messages"
+	@echo "... assignment_2_2024_gencpp"
+	@echo "... assignment_2_2024_generate_messages_eus"
 .PHONY : help
 
 
