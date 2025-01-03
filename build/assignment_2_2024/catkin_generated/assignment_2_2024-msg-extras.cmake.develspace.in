@@ -1,0 +1,2 @@
+set(assignment_2_2024_MESSAGE_FILES "/root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningAction.msg;/root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionGoal.msg;/root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg;/root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg;/root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg;/root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningResult.msg;/root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg")
+set(assignment_2_2024_SERVICE_FILES "")

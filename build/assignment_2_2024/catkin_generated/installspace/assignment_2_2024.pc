@@ -1,0 +1,8 @@
+prefix=/root/gaz_ws/install
+
+Name: assignment_2_2024
+Description: Description of assignment_2_2024
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

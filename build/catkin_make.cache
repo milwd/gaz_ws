@@ -1,0 +1,2 @@
+assignment2_part1:assignment_2_2024
+-DCATKIN_DEVEL_PREFIX=/root/gaz_ws/devel -DCMAKE_INSTALL_PREFIX=/root/gaz_ws/install -G Unix Makefiles

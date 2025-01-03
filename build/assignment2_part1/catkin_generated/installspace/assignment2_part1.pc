@@ -1,0 +1,8 @@
+prefix=/root/gaz_ws/install
+
+Name: assignment2_part1
+Description: Description of assignment2_part1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
