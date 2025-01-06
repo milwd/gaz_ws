@@ -1,6 +1,6 @@
 # Bug-0 and Wall-Following Robot Navigation in Gazebo with ROS Noetic
 
-This project demonstrates a robot navigating in a Gazebo environment using the Bug-0 algorithm and a wall-following behavior. The navigation leverages an **Action Server** for non-blocking communication, allowing the user to cancel the robot's goal anytime. The project also provides the robot's current goal destination through a service.
+This project demonstrates a robot navigating in a Gazebo environment using the Bug-0 algorithm and a wall-following behavior. The navigation leverages an **Action Server** for non-blocking communication, allowing the user to cancel the robot's goal anytime. The project also provides the robot's previous goal destination through a service.
 
 ![visu1](visu1.gif)
 
@@ -55,7 +55,7 @@ Valid coordinate range: x ∈ [-9, 9], y ∈ [-9, 9].
 While the robot is moving, press q and hit Enter to cancel the current goal.
 
 ### Step 4: Query the Last Goal
-To retrieve the last goal, use the /userdestination service:
+To retrieve the last goal, use the /lastdestination service:
 ```bash
 rosservice call /lastdestination
 ```    
