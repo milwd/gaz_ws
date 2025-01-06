@@ -32,15 +32,12 @@ def action():
 	client = actionlib.SimpleActionClient('/reaching_goal', assignment2_part1.msg.PlanningAction)
 	client.wait_for_server()
 	
-	# While loop until the program finished or interrupted
 	while not rospy.is_shutdown():
 		time.sleep(0.5)
-		# Get goal coordinates from user
 		print("Set the goal coordinates!")
 		try:
 			x = float(input("Enter x coordinate: "))
 			y = float(input("Enter y coordinate: "))
-			# Checking the correctness of inputs
 			if -9 <= x <= 9 and -9 <= y <= 9:
 				print(f"Goal coordinates set: (x={x},y={y})")
 			else:
