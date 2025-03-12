@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wall Following with Gazebo and ROS’s documentation! &mdash; Wall Following with Gazebo and ROS 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=404a92a0"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="scripts" href="docs/modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Wall Following with Gazebo and ROS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="docs/modules.html">scripts</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Wall Following with Gazebo and ROS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Wall Following with Gazebo and ROS’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wall-following-with-gazebo-and-ros-s-documentation">
+<h1>Wall Following with Gazebo and ROS’s documentation!<a class="headerlink" href="#wall-following-with-gazebo-and-ros-s-documentation" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="docs/modules.html">scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/bug_as.html">bug_as module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/go_to_point_service.html">go_to_point_service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/lastdestination.html">lastdestination module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/userdestination.html">userdestination module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/wall_follow_service.html">wall_follow_service module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
+<p>This project demonstrates a robot navigating in a Gazebo environment using the Bug-0 algorithm and a wall-following behavior, leveraging ROS Noetic and Gazebo for simulation. The robot can be controlled with an <strong>Action Server</strong> for non-blocking communication, allowing goal cancellation at any time. The system also includes a service to retrieve the most recently set goal destination.</p>
+<img alt="Bug-0 Robot Navigation in Gazebo" class="align-center" src="_images/visu1.gif" />
+</section>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Action Server Navigation</strong>: Navigate the robot to target coordinates (x, y) using Bug-0 and wall-following algorithms.</p></li>
+<li><p><strong>Goal Cancellation</strong>: Cancel the current goal at any time through the action server.</p></li>
+<li><p><strong>Service to Retrieve Last Goal</strong>: Access the most recent goal coordinates via the <cite>/lastdestination</cite> service.</p></li>
+<li><p><strong>ROS Noetic Compatibility</strong>: Built and tested with ROS Noetic and Gazebo.</p></li>
+</ul>
+</section>
+<section id="system-architecture">
+<h2>System Architecture<a class="headerlink" href="#system-architecture" title="Permalink to this heading"></a></h2>
+<p>The system includes the following nodes and topics:</p>
+<p><strong>Nodes</strong>:
+- <cite>/robot_state_publisher</cite>: Publishes robot joint states.
+- <cite>/go_to_point</cite> and <cite>/wall_follower</cite>: Implements the Bug-0 and wall-following algorithms.
+- <cite>/bug_action_service</cite>: Manages goal-setting and cancellations via an Action Server.
+- <cite>/userdestination</cite>: Provides the last goal set by the user.</p>
+<p><strong>Topics</strong>:
+- <cite>/cmd_vel</cite>: Sends command velocity for robot motion.
+- <cite>/odom</cite>: Provides odometry data.
+- <cite>/reaching_goal/goal</cite>: Sets a new navigation goal for the robot.
+- <cite>/reaching_goal/status</cite>: Indicates the status of the goal (reached, cancelled, etc.).</p>
+<img alt="RQT Graph of Node Connections" class="align-center" src="_images/rqtgraph1.png" />
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h2>
+<p>Before running the project, ensure you have the following installed:
+- ROS Noetic
+- Gazebo
+- <cite>rqt_graph</cite> (for visualization)
+- Necessary ROS packages for action servers, odometry, and geometry messages.</p>
+</section>
+<section id="how-to-run">
+<h2>How to Run<a class="headerlink" href="#how-to-run" title="Permalink to this heading"></a></h2>
+<p>Follow these steps to run the robot simulation:</p>
+<p><strong>Step 1: Launch the Gazebo Simulation</strong>
+Run the following command to start the Gazebo environment with the robot model:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`roslaunch</span> <span class="pre">assignment1_part2</span> <span class="pre">assignment1.launch`</span></code></p>
+<p>Run the Gazebo environment with the robot model:</p>
+<p>roslaunch assignment1_part2 assignment1.launch
+Wait for RViz and Gazebo to start up!</p>
+<p><strong>Step 2: Set a Goal</strong>
+Input the goal coordinates via the terminal:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">Set</span> <span class="pre">the</span> <span class="pre">goal</span> <span class="pre">coordinates!</span>
+<span class="pre">Enter</span> <span class="pre">x</span> <span class="pre">coordinate:</span> <span class="pre">&lt;value&gt;</span>
+<span class="pre">Enter</span> <span class="pre">y</span> <span class="pre">coordinate:</span> <span class="pre">&lt;value&gt;</span>
+<span class="pre">Valid</span> <span class="pre">coordinate</span> <span class="pre">range:</span> <span class="pre">x</span> <span class="pre">?</span> <span class="pre">[-9,</span> <span class="pre">9],</span> <span class="pre">y</span> <span class="pre">?</span> <span class="pre">[-9,</span> <span class="pre">9].</span>
+<span class="pre">`</span></code></p>
+<p><strong>Step 3: Cancel a Goal</strong>
+While the robot is moving, press q and hit Enter to cancel the current goal.</p>
+<p><strong>Step 4: Query the Last Goal</strong>
+To retrieve the last goal, use the /lastdestination service:
+<code class="docutils literal notranslate"><span class="pre">`rosservice</span> <span class="pre">call</span> <span class="pre">/lastdestination`</span></code></p>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="docs/modules.html" class="btn btn-neutral float-right" title="scripts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Milad Rabiei.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>userdestination module &mdash; Wall Following with Gazebo and ROS 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=404a92a0"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="wall_follow_service module" href="wall_follow_service.html" />
+    <link rel="prev" title="lastdestination module" href="lastdestination.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Wall Following with Gazebo and ROS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">scripts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bug_as.html">bug_as module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="go_to_point_service.html">go_to_point_service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lastdestination.html">lastdestination module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">userdestination module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user-destination">User Destination</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#userdestination.action"><code class="docutils literal notranslate"><span class="pre">action()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#userdestination.clbk_feedback"><code class="docutils literal notranslate"><span class="pre">clbk_feedback()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#userdestination.clbk_odom"><code class="docutils literal notranslate"><span class="pre">clbk_odom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#userdestination.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wall_follow_service.html">wall_follow_service module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wall Following with Gazebo and ROS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">scripts</a></li>
+      <li class="breadcrumb-item active">userdestination module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/docs/userdestination.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-userdestination">
+<span id="userdestination-module"></span><h1>userdestination module<a class="headerlink" href="#module-userdestination" title="Permalink to this heading"></a></h1>
+<section id="user-destination">
+<h2>User Destination<a class="headerlink" href="#user-destination" title="Permalink to this heading"></a></h2>
+<p>This module defines a ROS action client that interacts with a robot’s goal-planning
+system. The client sends goals to a navigation system and allows the user to set new goals
+through the console. Additionally, the client subscribes to an odometry topic to publish the
+robot’s position and velocity, and handles feedback from the goal-reaching action.</p>
+<p>The main tasks of the node include:
+1. Subscribing to the robot’s odometry data to track position and velocity.
+2. Sending goals to the ‘/reaching_goal’ action server.
+3. Handling feedback from the action server to notify when the goal is reached or canceled.
+4. Allowing the user to interactively set new goals via the console.</p>
+<section id="dependencies">
+<h3>Dependencies:<a class="headerlink" href="#dependencies" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>rospy: The Python library for ROS (Robot Operating System) interaction.</p></li>
+<li><p>actionlib: A library for managing actions in ROS, including goal sending and feedback handling.</p></li>
+<li><p>assignment2_part1.msg: Custom message definitions used in the project.</p></li>
+<li><p>std_srvs.srv: Standard service definitions used in ROS.</p></li>
+<li><p>nav_msgs.msg: Message definitions for odometry data.</p></li>
+<li><p>geometry_msgs.msg: Message definitions for geometry, including Pose, Point, and Twist.</p></li>
+</ul>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="userdestination.action">
+<span class="sig-prename descclassname"><span class="pre">userdestination.</span></span><span class="sig-name descname"><span class="pre">action</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/userdestination.html#action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userdestination.action" title="Permalink to this definition"></a></dt>
+<dd><p>Main function for sending goals to the ‘/reaching_goal’ action server.</p>
+<p>This function initializes an action client and repeatedly prompts the user to enter
+goal coordinates (x, y). It validates the input to ensure the coordinates are within
+a valid range (-9 to 9). Once a valid goal is set, it sends the goal to the action
+server and waits for feedback. During goal execution, the user can cancel the goal
+by pressing the ‘q’ key.</p>
+<p>The function will continue looping until the user manually shuts down the node or the
+robot reaches or cancels the goal.</p>
+<p>It also handles cancelling the goal using the <cite>select</cite> module to listen for user input
+asynchronously without blocking the ROS event loop.</p>
+<p>This function does not return any values; it runs as long as the node is active and
+interacting with the user.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="userdestination.clbk_feedback">
+<span class="sig-prename descclassname"><span class="pre">userdestination.</span></span><span class="sig-name descname"><span class="pre">clbk_feedback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feedback</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/userdestination.html#clbk_feedback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userdestination.clbk_feedback" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function for receiving feedback from the ‘/reaching_goal’ action server.</p>
+<p>This function processes the feedback provided by the action server. If the status
+indicates that the target was reached, a message is printed to notify the user. If
+the goal is canceled, the status of the cancellation is also printed.</p>
+<p><em>Parameters</em>:
+feedback (PlanningActionFeedback):</p>
+<blockquote>
+<div><p>The feedback message received from the action server, containing the current status of the goal.</p>
+</div></blockquote>
+<p>The feedback’s <cite>stat</cite> field is checked for specific messages (“Target reached!” or
+“Target cancelled!”) and appropriate messages are printed to the console to inform
+the user of the goal’s status.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="userdestination.clbk_odom">
+<span class="sig-prename descclassname"><span class="pre">userdestination.</span></span><span class="sig-name descname"><span class="pre">clbk_odom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/userdestination.html#clbk_odom"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userdestination.clbk_odom" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function for the ‘/odom’ topic subscription.</p>
+<p>This function is triggered whenever a new Odometry message is received. It extracts
+the robot’s position (x, y) and velocity (linear x, angular z) from the message and
+publishes these values to the ‘/robot_pos_vel’ topic in a custom ‘posit’ message format.</p>
+<p><em>Parameters</em>:
+msg (Odometry):</p>
+<blockquote>
+<div><p>The Odometry message received from the robot, containing position and velocity information.</p>
+</div></blockquote>
+<p>This function does not return any values, but it publishes the position and velocity
+data to the ‘/robot_pos_vel’ topic for further processing or logging.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="userdestination.main">
+<span class="sig-prename descclassname"><span class="pre">userdestination.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/userdestination.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#userdestination.main" title="Permalink to this definition"></a></dt>
+<dd><p>The main entry point of the ROS node.</p>
+<p>This function initializes the ROS node, sets up the publisher and subscriber for
+the robot’s position and odometry data, and calls the action function to interact
+with the goal-reaching system.</p>
+<p>It also defines global variables <cite>pub</cite> and <cite>sub</cite> to manage the publisher for the
+‘/robot_pos_vel’ topic and the subscriber for the ‘/odom’ topic. These variables are
+used in other parts of the code, such as the callback for odometry messages.</p>
+<p>The function then starts the action interaction, enabling the user to set goals and
+receive feedback.</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="lastdestination.html" class="btn btn-neutral float-left" title="lastdestination module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="wall_follow_service.html" class="btn btn-neutral float-right" title="wall_follow_service module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Milad Rabiei.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
