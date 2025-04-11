@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bug_as module &mdash; Wall Following with Gazebo and ROS 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=404a92a0"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="go_to_point_service module" href="go_to_point_service.html" />
+    <link rel="prev" title="scripts" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Wall Following with Gazebo and ROS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">scripts</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">bug_as module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bug0-navigation-node">Bug0 Navigation Node</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#bug_as.change_state"><code class="docutils literal notranslate"><span class="pre">change_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug_as.clbk_laser"><code class="docutils literal notranslate"><span class="pre">clbk_laser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug_as.clbk_odom"><code class="docutils literal notranslate"><span class="pre">clbk_odom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug_as.done"><code class="docutils literal notranslate"><span class="pre">done()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug_as.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug_as.normalize_angle"><code class="docutils literal notranslate"><span class="pre">normalize_angle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug_as.planning"><code class="docutils literal notranslate"><span class="pre">planning()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug_as.state_"><code class="docutils literal notranslate"><span class="pre">state_</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="go_to_point_service.html">go_to_point_service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lastdestination.html">lastdestination module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userdestination.html">userdestination module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wall_follow_service.html">wall_follow_service module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wall Following with Gazebo and ROS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">scripts</a></li>
+      <li class="breadcrumb-item active">bug_as module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/docs/bug_as.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-bug_as">
+<span id="bug-as-module"></span><h1>bug_as module<a class="headerlink" href="#module-bug_as" title="Permalink to this heading"></a></h1>
+<section id="bug0-navigation-node">
+<h2>Bug0 Navigation Node<a class="headerlink" href="#bug0-navigation-node" title="Permalink to this heading"></a></h2>
+<p>This module implements a ROS-based navigation strategy for a robot using the Bug0 algorithm.
+The system subscribes to odometry and laser scan data, processes sensor information, and
+utilizes an action server to reach specified target positions while avoiding obstacles.</p>
+<p>The main functionalities include:
+- Subscribing to <cite>/odom</cite> for robot pose and orientation.
+- Subscribing to <cite>/scan</cite> for laser-based obstacle detection.
+- Publishing velocity commands to <cite>/cmd_vel</cite>.
+- Managing different navigation states: moving to a goal, avoiding obstacles, and stopping.
+- Using an action server (<cite>/reaching_goal</cite>) to execute navigation commands.
+- Calling services to switch between goal-seeking and wall-following behaviors.</p>
+<section id="dependencies">
+<h3>Dependencies:<a class="headerlink" href="#dependencies" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>rospy: ROS Python library for communication.</p></li>
+<li><p>geometry_msgs: Provides Point, Pose, and Twist message types.</p></li>
+<li><p>sensor_msgs: Provides LaserScan message type.</p></li>
+<li><p>nav_msgs: Provides Odometry message type.</p></li>
+<li><p>std_srvs: Provides standard ROS service message types.</p></li>
+<li><p>tf: Provides transformations for quaternion processing.</p></li>
+<li><p>actionlib: Provides tools for implementing action-based communication.</p></li>
+</ul>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="bug_as.change_state">
+<span class="sig-prename descclassname"><span class="pre">bug_as.</span></span><span class="sig-name descname"><span class="pre">change_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bug_as.html#change_state"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bug_as.change_state" title="Permalink to this definition"></a></dt>
+<dd><p>Updates the robot’s navigation state and adjusts service calls accordingly.</p>
+<p><em>Parameters</em>:
+state (int):</p>
+<blockquote>
+<div><p>The new state to transition to (0: go to point, 1: wall following, 2: done).</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bug_as.clbk_laser">
+<span class="sig-prename descclassname"><span class="pre">bug_as.</span></span><span class="sig-name descname"><span class="pre">clbk_laser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bug_as.html#clbk_laser"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bug_as.clbk_laser" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function for the laser scanner subscriber.</p>
+<p>Processes laser scan data and segments obstacle distances into predefined regions.</p>
+<p><em>Parameters</em>:
+msg (sensor_msgs.msg.LaserScan):</p>
+<blockquote>
+<div><p>The laser scan message containing range data.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bug_as.clbk_odom">
+<span class="sig-prename descclassname"><span class="pre">bug_as.</span></span><span class="sig-name descname"><span class="pre">clbk_odom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bug_as.html#clbk_odom"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bug_as.clbk_odom" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function for the odometry subscriber.</p>
+<p>Updates the robot’s position and yaw angle based on odometry data.</p>
+<p><em>Parameters</em>:
+msg (nav_msgs.msg.Odometry):</p>
+<blockquote>
+<div><p>The odometry message containing the robot’s pose.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bug_as.done">
+<span class="sig-prename descclassname"><span class="pre">bug_as.</span></span><span class="sig-name descname"><span class="pre">done</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bug_as.html#done"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bug_as.done" title="Permalink to this definition"></a></dt>
+<dd><p>Stops the robot by publishing zero velocity.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bug_as.main">
+<span class="sig-prename descclassname"><span class="pre">bug_as.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bug_as.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bug_as.main" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes the ROS node, sets up subscribers, publishers, and services, and starts the action server.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bug_as.normalize_angle">
+<span class="sig-prename descclassname"><span class="pre">bug_as.</span></span><span class="sig-name descname"><span class="pre">normalize_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bug_as.html#normalize_angle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bug_as.normalize_angle" title="Permalink to this definition"></a></dt>
+<dd><p>Normalizes an angle to the range [-pi, pi].</p>
+<p><em>Parameters</em>:
+angle (float):</p>
+<blockquote>
+<div><p>The angle in radians.</p>
+</div></blockquote>
+<p><em>Returns</em>:
+angle (float):</p>
+<blockquote>
+<div><p>The normalized angle.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bug_as.planning">
+<span class="sig-prename descclassname"><span class="pre">bug_as.</span></span><span class="sig-name descname"><span class="pre">planning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">goal</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bug_as.html#planning"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bug_as.planning" title="Permalink to this definition"></a></dt>
+<dd><p>Executes the robot’s goal-reaching behavior while avoiding obstacles.</p>
+<p><em>Parameters</em>:
+goal (assignment_2_2024.msg.PlanningGoal):</p>
+<blockquote>
+<div><p>The goal message containing the target pose.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="bug_as.state_">
+<span class="sig-prename descclassname"><span class="pre">bug_as.</span></span><span class="sig-name descname"><span class="pre">state_</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#bug_as.state_" title="Permalink to this definition"></a></dt>
+<dd><p>Current navigation state (0 - go to point, 1 - wall following, 2 - done, 3 - canceled)</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="scripts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="go_to_point_service.html" class="btn btn-neutral float-right" title="go_to_point_service module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Milad Rabiei.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

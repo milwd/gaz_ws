@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lastdestination &mdash; Wall Following with Gazebo and ROS 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=404a92a0"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Wall Following with Gazebo and ROS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../docs/modules.html">scripts</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wall Following with Gazebo and ROS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Module code</a></li>
+      <li class="breadcrumb-item active">lastdestination</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for lastdestination</h1><div class="highlight"><pre>
+<span></span><span class="ch">#! /usr/bin/env python</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Last Destination</span>
+<span class="sd">================</span>
+
+<span class="sd">This module provides a ROS node that tracks and serves the last destination coordinates</span>
+<span class="sd">based on the latest goal received from a navigation or planning system. The node exposes</span>
+<span class="sd">a service to return the most recent destination coordinates (x, y), and subscribes to</span>
+<span class="sd">a topic for receiving goal messages to update the destination coordinates.</span>
+
+<span class="sd">The main functionality involves:</span>
+<span class="sd">1. Subscribing to a goal topic.</span>
+<span class="sd">2. Updating destination coordinates when a new goal is received.</span>
+<span class="sd">3. Exposing a service to return the last known destination coordinates on request.</span>
+
+<span class="sd">Dependencies:</span>
+<span class="sd">-------------</span>
+<span class="sd">- rospy: The Python library for ROS (Robot Operating System) interaction.</span>
+<span class="sd">- assignment2_part1.msg: Custom message definitions used in the project.</span>
+<span class="sd">- assignment2_part1.srv: Custom service definitions used in the project.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">rospy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">assignment2_part1.msg</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">assignment2_part1.srv</span><span class="w"> </span><span class="kn">import</span> <span class="n">last_destination</span>
+
+<span class="c1"># Global variables to store the last known destination coordinates</span>
+<span class="n">last_destination_x</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">last_destination_y</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="clbk_service"><a class="viewcode-back" href="../docs/lastdestination.html#lastdestination.clbk_service">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">clbk_service</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Callback function for the ROS service &#39;last_destination&#39;.</span>
+<span class="sd">    </span>
+<span class="sd">    This function gets triggered whenever the service is called. It returns the last</span>
+<span class="sd">    known destination coordinates (x, y) stored globally. These coordinates are updated</span>
+<span class="sd">    whenever a new goal is received from the &#39;goal&#39; topic.</span>
+
+<span class="sd">    *Parameters*:</span>
+<span class="sd">    request (last_destinationRequest): </span>
+<span class="sd">    	The service request object (though unused here).</span>
+
+<span class="sd">    *Returns*:</span>
+<span class="sd">    last_destinationResponse: </span>
+<span class="sd">    	A response object containing the last known x and y coordinates.</span>
+
+<span class="sd">    This function does not perform any modification to the stored coordinates, it simply</span>
+<span class="sd">    returns the most recent ones available.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">last_destination_x</span><span class="p">,</span> <span class="n">last_destination_y</span>
+    <span class="c1"># Print the current destination coordinates for debugging purposes</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Last destination x/y coordinate is: &quot;</span><span class="p">,</span> <span class="n">last_destination_x</span><span class="p">,</span> <span class="n">last_destination_y</span><span class="p">)</span>
+    
+    <span class="c1"># Return the coordinates in the response</span>
+    <span class="k">return</span> <span class="n">last_destinationResponse</span><span class="p">(</span><span class="n">last_destination_x</span><span class="p">,</span> <span class="n">last_destination_y</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="clbk_goal"><a class="viewcode-back" href="../docs/lastdestination.html#lastdestination.clbk_goal">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">clbk_goal</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Callback function for subscribing to the &#39;/reaching_goal/goal&#39; topic.</span>
+
+<span class="sd">    This function is triggered whenever a new goal message is received on the topic.</span>
+<span class="sd">    It updates the global variables holding the last known destination coordinates with</span>
+<span class="sd">    the new goal&#39;s position values (x, y).</span>
+
+<span class="sd">    *Parameters*:</span>
+<span class="sd">    msg (PlanningActionGoal): </span>
+<span class="sd">    	The message received from the &#39;goal&#39; topic containing the target position for the goal.</span>
+
+<span class="sd">    This function updates the global variables &#39;last_destination_x&#39; and &#39;last_destination_y&#39;.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">last_destination_x</span><span class="p">,</span> <span class="n">last_destination_y</span>
+    <span class="c1"># Extract the x and y coordinates from the message</span>
+    <span class="n">last_destination_x</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">goal</span><span class="o">.</span><span class="n">target_pose</span><span class="o">.</span><span class="n">pose</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">x</span>
+    <span class="n">last_destination_y</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">goal</span><span class="o">.</span><span class="n">target_pose</span><span class="o">.</span><span class="n">pose</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">y</span></div>
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../docs/lastdestination.html#lastdestination.main">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Main entry point of the node.</span>
+
+<span class="sd">    This function initializes the ROS node, sets up the service and the subscriber, and enters</span>
+<span class="sd">    the ROS event loop to handle service requests and message reception.</span>
+
+<span class="sd">    It initializes the &#39;last_destination&#39; service with the callback function &#39;clbk_service&#39;.</span>
+<span class="sd">    It also subscribes to the &#39;/reaching_goal/goal&#39; topic to listen for new goal messages</span>
+<span class="sd">    and calls the &#39;clbk_goal&#39; callback when a new message is received.</span>
+
+<span class="sd">    This function ensures that the node continues to run, processing service calls and topic</span>
+<span class="sd">    messages until the node is shut down.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Initialize the ROS node with the name &#39;last_destination&#39;</span>
+    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;last_destination&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Advertise the service to provide last destination coordinates</span>
+    <span class="n">rospy</span><span class="o">.</span><span class="n">Service</span><span class="p">(</span><span class="s2">&quot;last_destination&quot;</span><span class="p">,</span> <span class="n">last_destination</span><span class="p">,</span> <span class="n">clbk_service</span><span class="p">)</span>
+
+    <span class="c1"># Subscribe to the &#39;/reaching_goal/goal&#39; topic to receive goal messages</span>
+    <span class="n">rospy</span><span class="o">.</span><span class="n">Subscriber</span><span class="p">(</span><span class="s1">&#39;/reaching_goal/goal&#39;</span><span class="p">,</span> <span class="n">assignment2_part1</span><span class="o">.</span><span class="n">msg</span><span class="o">.</span><span class="n">PlanningActionGoal</span><span class="p">,</span> <span class="n">clbk_goal</span><span class="p">)</span>
+
+    <span class="c1"># Spin to keep the program running and processing ROS callbacks</span>
+    <span class="n">rospy</span><span class="o">.</span><span class="n">spin</span><span class="p">()</span></div>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1"># Execute the main function when the script is run</span>
+    <span class="n">main</span><span class="p">()</span>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Milad Rabiei.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
