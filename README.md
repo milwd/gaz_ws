@@ -6,6 +6,7 @@ This project demonstrates a robot navigating in a Gazebo environment using the B
 
 ![visu1](visu1.gif)
 
+And a Jupyter Action-Server command center:
 ![visu2](Screenshot2025-04-11.png)
 
 ## Features
