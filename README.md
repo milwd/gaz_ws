@@ -6,6 +6,8 @@ This project demonstrates a robot navigating in a Gazebo environment using the B
 
 ![visu1](visu1.gif)
 
+![visu2](Screenshot2025-04-11.png)
+
 ## Features
 - **Action Server Navigation**: Users can input target coordinates (x, y), and the robot navigates to the location using the Bug-0 and wall-following algorithms.
 - **Goal Cancellation**: The action server allows users to cancel the current goal at any time.
