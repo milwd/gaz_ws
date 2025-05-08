@@ -71,62 +71,62 @@ assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs: /root/g
 
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningAction.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningFeedback.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionGoal.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningGoal.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionFeedback.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningResult.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionResult.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningResult.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionFeedback.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningAction.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from assignment2_part1/PlanningAction.msg"
 	cd /root/gaz_ws/build/assignment2_part1 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningAction.msg -Iassignment2_part1:/root/gaz_ws/src/assignment2_part1/msg -Iassignment2_part1:/root/gaz_ws/devel/share/assignment2_part1/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment2_part1 -o /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg
 
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionGoal.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningGoal.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionGoal.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from assignment2_part1/PlanningActionGoal.msg"
 	cd /root/gaz_ws/build/assignment2_part1 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionGoal.msg -Iassignment2_part1:/root/gaz_ws/src/assignment2_part1/msg -Iassignment2_part1:/root/gaz_ws/devel/share/assignment2_part1/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment2_part1 -o /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg
 
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionResult.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionResult.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionResult.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionResult.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningResult.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionResult.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionResult.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningResult.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from assignment2_part1/PlanningActionResult.msg"
 	cd /root/gaz_ws/build/assignment2_part1 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionResult.msg -Iassignment2_part1:/root/gaz_ws/src/assignment2_part1/msg -Iassignment2_part1:/root/gaz_ws/devel/share/assignment2_part1/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment2_part1 -o /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg
 
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionFeedback.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningActionFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from assignment2_part1/PlanningActionFeedback.msg"
 	cd /root/gaz_ws/build/assignment2_part1 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningActionFeedback.msg -Iassignment2_part1:/root/gaz_ws/src/assignment2_part1/msg -Iassignment2_part1:/root/gaz_ws/devel/share/assignment2_part1/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment2_part1 -o /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg
 
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningGoal.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from assignment2_part1/PlanningGoal.msg"
 	cd /root/gaz_ws/build/assignment2_part1 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningGoal.msg -Iassignment2_part1:/root/gaz_ws/src/assignment2_part1/msg -Iassignment2_part1:/root/gaz_ws/devel/share/assignment2_part1/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment2_part1 -o /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg
 
@@ -137,8 +137,8 @@ assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs: /root/g
 
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningFeedback.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningFeedback.js: /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg/PlanningFeedback.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from assignment2_part1/PlanningFeedback.msg"
 	cd /root/gaz_ws/build/assignment2_part1 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/gaz_ws/devel/share/assignment2_part1/msg/PlanningFeedback.msg -Iassignment2_part1:/root/gaz_ws/src/assignment2_part1/msg -Iassignment2_part1:/root/gaz_ws/devel/share/assignment2_part1/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment2_part1 -o /root/gaz_ws/devel/share/gennodejs/ros/assignment2_part1/msg
