@@ -1,3 +1,6 @@
 [submodule "assignment_2_2024"]
 	path = assignment_2_2024
 	url = https://github.com/CarmineD8/assignment_2_2024.git
+[submodule "src/assignment_2_2024"]
+	path = src/assignment_2_2024
+	url = https://github.com/CarmineD8/assignment_2_2024.git
