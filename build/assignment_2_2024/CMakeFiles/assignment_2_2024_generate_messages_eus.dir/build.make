@@ -65,62 +65,62 @@ assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus: /root/gaz_
 
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningAction.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningResult.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionGoal.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningResult.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningAction.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from assignment_2_2024/PlanningAction.msg"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningAction.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg
 
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionGoal.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionGoal.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from assignment_2_2024/PlanningActionGoal.msg"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionGoal.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg
 
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionResult.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionResult.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionResult.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionResult.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningResult.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionResult.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from assignment_2_2024/PlanningActionResult.msg"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg
 
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningActionFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from assignment_2_2024/PlanningActionFeedback.msg"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg
 
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningGoal.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from assignment_2_2024/PlanningGoal.msg"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg
 
@@ -131,8 +131,8 @@ assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_eus: /root/gaz_
 
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningFeedback.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningFeedback.l: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg/PlanningFeedback.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from assignment_2_2024/PlanningFeedback.msg"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/share/roseus/ros/assignment_2_2024/msg

@@ -65,62 +65,62 @@ assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_py: /root/gaz_w
 
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningAction.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningResult.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionGoal.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningResult.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningAction.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG assignment_2_2024/PlanningAction"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningAction.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg
 
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionGoal.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionGoal.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG assignment_2_2024/PlanningActionGoal"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionGoal.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg
 
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionResult.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionResult.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionResult.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningResult.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionResult.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG assignment_2_2024/PlanningActionResult"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionResult.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg
 
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG assignment_2_2024/PlanningActionFeedback"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningActionFeedback.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg
 
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG assignment_2_2024/PlanningGoal"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningGoal.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg
 
@@ -131,8 +131,8 @@ assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_py: /root/gaz_w
 
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningFeedback.py: /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg
-/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg/_PlanningFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG assignment_2_2024/PlanningFeedback"
 	cd /root/gaz_ws/build/assignment_2_2024 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/gaz_ws/devel/share/assignment_2_2024/msg/PlanningFeedback.msg -Iassignment_2_2024:/root/gaz_ws/devel/share/assignment_2_2024/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2024 -o /root/gaz_ws/devel/lib/python3/dist-packages/assignment_2_2024/msg
