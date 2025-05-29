@@ -18,6 +18,8 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   std_srvs
   tf
+  gazebo_msgs
+  std_srvs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -77,6 +79,7 @@ generate_messages(
   actionlib_msgs
   geometry_msgs
   std_msgs
+  gazebo_msgs
 )
 
 ################################################
@@ -171,6 +174,8 @@ catkin_install_python(PROGRAMS
   scripts/lastdestination.py
   scripts/userdestination.py
   scripts/wall_follow_service.py
+  scripts/wall_follow_service2.py
+  scripts/bug_experiment.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

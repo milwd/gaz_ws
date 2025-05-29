@@ -3,9 +3,12 @@
     <include file="$(find assignment2_part1)/launch/sim_w1.launch" />
     <param name="des_pos_x" value= "0.0" />
     <param name="des_pos_y" value= "1.0" />
+    <param name="algo" value= "1" />
+        
     <node pkg="assignment2_part1" type="wall_follow_service.py" name="wall_follower" />
     <node pkg="assignment2_part1" type="go_to_point_service.py" name="go_to_point"  />
     <node pkg="assignment2_part1" type="bug_as.py" name="bug_action_service" output="screen" />
+    <node pkg="assignment2_part1" type="bug_experiment.py" name="bug_experiment" output="screen" />
     <!-- <node pkg="assignment2_part1" type="lastdestination.py" name="lastdestination" output="screen" /> 	-->
     <!-- <node pkg="assignment2_part1" type="userdestination.py" name="userdestination" output="screen" />	-->
 </launch>

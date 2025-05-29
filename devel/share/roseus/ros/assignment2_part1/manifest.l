@@ -7,8 +7,12 @@
 ;;
 (ros::load-ros-package "actionlib")
 (ros::load-ros-package "actionlib_msgs")
+(ros::load-ros-package "gazebo_msgs")
 (ros::load-ros-package "geometry_msgs")
 (ros::load-ros-package "roscpp")
 (ros::load-ros-package "rosgraph_msgs")
+(ros::load-ros-package "sensor_msgs")
 (ros::load-ros-package "std_msgs")
+(ros::load-ros-package "std_srvs")
+(ros::load-ros-package "trajectory_msgs")
 (ros::load-ros-package "assignment2_part1")

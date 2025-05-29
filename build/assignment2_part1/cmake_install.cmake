@@ -128,3 +128,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/assignment2_part1" TYPE PROGRAM FILES "/root/gaz_ws/build/assignment2_part1/catkin_generated/installspace/wall_follow_service.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/assignment2_part1" TYPE PROGRAM FILES "/root/gaz_ws/build/assignment2_part1/catkin_generated/installspace/wall_follow_service2.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/assignment2_part1" TYPE PROGRAM FILES "/root/gaz_ws/build/assignment2_part1/catkin_generated/installspace/bug_experiment.py")
+endif()
+

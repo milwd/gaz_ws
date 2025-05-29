@@ -92,24 +92,31 @@ assignment2_part1/preinstall:
 .PHONY : assignment2_part1/preinstall
 
 # Recursive "clean" directory target.
-assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_gennodejs.dir/clean
-assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_last_destination.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningFeedback.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningResult.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionFeedback.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
-assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/clean
-assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/std_msgs_generate_messages_py.dir/clean
@@ -118,6 +125,7 @@ assignment2_part1/clean: assignment2_part1/CMakeFiles/std_srvs_generate_messages
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/roscpp_generate_messages_py.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/_catkin_empty_exported_target.dir/clean
@@ -133,23 +141,23 @@ assignment2_part1/clean: assignment2_part1/CMakeFiles/nav_msgs_generate_messages
 assignment2_part1/clean: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionGoal.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf_generate_messages_cpp.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/actionlib_generate_messages_eus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf_generate_messages_py.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-assignment2_part1/clean: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
@@ -165,9 +173,11 @@ assignment2_part1/clean: assignment2_part1/CMakeFiles/std_srvs_generate_messages
 assignment2_part1/clean: assignment2_part1/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf_generate_messages_lisp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 assignment2_part1/clean: assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
-assignment2_part1/clean: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+assignment2_part1/clean: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/clean
 
 .PHONY : assignment2_part1/clean
 
@@ -508,33 +518,6 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir
-
-# All Build rule for target.
-assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/depend
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target assignment2_part1_genpy"
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/rule
-
-# Convenience name for target.
-assignment2_part1_genpy: assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/rule
-
-.PHONY : assignment2_part1_genpy
-
-# clean rule for target.
-assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/clean:
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/clean
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/clean
-
-#=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir
 
 # All Build rule for target.
@@ -543,13 +526,14 @@ assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: ass
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningResult.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionFeedback.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/std_msgs_generate_messages_py.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionGoal.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/depend
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48 "Built target assignment2_part1_generate_messages_py"
@@ -598,33 +582,6 @@ assignment2_part1_gennodejs: assignment2_part1/CMakeFiles/assignment2_part1_genn
 assignment2_part1/CMakeFiles/assignment2_part1_gennodejs.dir/clean:
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_gennodejs.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_gennodejs.dir/clean
 .PHONY : assignment2_part1/CMakeFiles/assignment2_part1_gennodejs.dir/clean
-
-#=============================================================================
-# Target rules for target assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir
-
-# All Build rule for target.
-assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/depend
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target assignment2_part1_geneus"
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/all
-
-# Build rule for subdir invocation for target.
-assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/rule
-
-# Convenience name for target.
-assignment2_part1_geneus: assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/rule
-
-.PHONY : assignment2_part1_geneus
-
-# clean rule for target.
-assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/clean:
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/clean
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/clean
 
 #=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_last_destination.dir
@@ -743,13 +700,14 @@ assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all:
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningResult.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionFeedback.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionGoal.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionGoal.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/depend
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37 "Built target assignment2_part1_generate_messages_nodejs"
@@ -798,6 +756,307 @@ _assignment2_part1_generate_messages_check_deps_PlanningActionResult: assignment
 assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/clean:
 	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/clean
 .PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target _assignment2_part1_generate_messages_check_deps_PlanningAction"
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/rule
+
+# Convenience name for target.
+_assignment2_part1_generate_messages_check_deps_PlanningAction: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/rule
+
+.PHONY : _assignment2_part1_generate_messages_check_deps_PlanningAction
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target _assignment2_part1_generate_messages_check_deps_posit"
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/rule
+
+# Convenience name for target.
+_assignment2_part1_generate_messages_check_deps_posit: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/rule
+
+.PHONY : _assignment2_part1_generate_messages_check_deps_posit
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target _assignment2_part1_generate_messages_check_deps_PlanningGoal"
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/rule
+
+# Convenience name for target.
+_assignment2_part1_generate_messages_check_deps_PlanningGoal: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/rule
+
+.PHONY : _assignment2_part1_generate_messages_check_deps_PlanningGoal
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target assignment2_part1_generate_messages"
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 48
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/rule
+
+# Convenience name for target.
+assignment2_part1_generate_messages: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/rule
+
+.PHONY : assignment2_part1_generate_messages
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_nodejs"
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_nodejs: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_nodejs
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target assignment2_part1_genpy"
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/rule
+
+# Convenience name for target.
+assignment2_part1_genpy: assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/rule
+
+.PHONY : assignment2_part1_genpy
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_genpy.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_lisp"
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_lisp: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_cpp"
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_cpp: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target gazebo_msgs_generate_messages_py"
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_py: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_py
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target assignment2_part1_geneus"
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/rule
+
+# Convenience name for target.
+assignment2_part1_geneus: assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/rule
+
+.PHONY : assignment2_part1_geneus
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_geneus.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target gazebo_msgs_generate_messages_nodejs"
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_nodejs: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_nodejs
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_eus.dir
@@ -916,13 +1175,14 @@ assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: a
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningResult.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionFeedback.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionGoal.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/depend
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=20,21,22,23,24,25,26,27,28 "Built target assignment2_part1_generate_messages_lisp"
@@ -971,64 +1231,6 @@ actionlib_msgs_generate_messages_py: assignment2_part1/CMakeFiles/actionlib_msgs
 assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
 	$(MAKE) -f assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
 .PHONY : assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
-
-#=============================================================================
-# Target rules for target assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir
-
-# All Build rule for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all:
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/depend
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target _assignment2_part1_generate_messages_check_deps_PlanningGoal"
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
-
-# Build rule for subdir invocation for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/rule
-
-# Convenience name for target.
-_assignment2_part1_generate_messages_check_deps_PlanningGoal: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/rule
-
-.PHONY : _assignment2_part1_generate_messages_check_deps_PlanningGoal
-
-# clean rule for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/clean:
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/clean
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/clean
-
-#=============================================================================
-# Target rules for target assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir
-
-# All Build rule for target.
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_py.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_nodejs.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_lisp.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/depend
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target assignment2_part1_generate_messages"
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all
-
-# Build rule for subdir invocation for target.
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 48
-	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/rule
-
-# Convenience name for target.
-assignment2_part1_generate_messages: assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/rule
-
-.PHONY : assignment2_part1_generate_messages
-
-# clean rule for target.
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/clean:
-	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/clean
-.PHONY : assignment2_part1/CMakeFiles/assignment2_part1_generate_messages.dir/clean
 
 #=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/roscpp_generate_messages_eus.dir
@@ -1201,13 +1403,14 @@ assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: as
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningResult.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionFeedback.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionGoal.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/all: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/depend
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19 "Built target assignment2_part1_generate_messages_eus"
@@ -1256,6 +1459,33 @@ actionlib_msgs_generate_messages_cpp: assignment2_part1/CMakeFiles/actionlib_msg
 assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean:
 	$(MAKE) -f assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
 .PHONY : assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_eus"
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_eus: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_eus
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/roscpp_generate_messages_py.dir
@@ -1590,13 +1820,14 @@ assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: as
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningResult.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionFeedback.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionResult.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningGoal.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningActionGoal.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
-assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/all: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/depend
 	$(MAKE) -f assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/assignment2_part1_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target assignment2_part1_generate_messages_cpp"
@@ -1672,6 +1903,33 @@ geometry_msgs_generate_messages_cpp: assignment2_part1/CMakeFiles/geometry_msgs_
 assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
 	$(MAKE) -f assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 .PHONY : assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target gazebo_msgs_generate_messages_lisp"
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_lisp: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_lisp
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_py.dir
@@ -1836,6 +2094,33 @@ assignment2_part1/CMakeFiles/tf_generate_messages_cpp.dir/clean:
 .PHONY : assignment2_part1/CMakeFiles/tf_generate_messages_cpp.dir/clean
 
 #=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_py"
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_py: assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_py
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/actionlib_generate_messages_eus.dir
 
 # All Build rule for target.
@@ -1942,33 +2227,6 @@ std_srvs_generate_messages_py: assignment2_part1/CMakeFiles/std_srvs_generate_me
 assignment2_part1/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
 	$(MAKE) -f assignment2_part1/CMakeFiles/std_srvs_generate_messages_py.dir/build.make assignment2_part1/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 .PHONY : assignment2_part1/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-
-#=============================================================================
-# Target rules for target assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir
-
-# All Build rule for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all:
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/depend
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target _assignment2_part1_generate_messages_check_deps_posit"
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
-
-# Build rule for subdir invocation for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/rule
-
-# Convenience name for target.
-_assignment2_part1_generate_messages_check_deps_posit: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/rule
-
-.PHONY : _assignment2_part1_generate_messages_check_deps_posit
-
-# clean rule for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/clean:
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/clean
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_posit.dir/clean
 
 #=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/roscpp_generate_messages_nodejs.dir
@@ -2104,33 +2362,6 @@ std_msgs_generate_messages_eus: assignment2_part1/CMakeFiles/std_msgs_generate_m
 assignment2_part1/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
 	$(MAKE) -f assignment2_part1/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 .PHONY : assignment2_part1/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-
-#=============================================================================
-# Target rules for target assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
-.PHONY : assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-.PHONY : assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# clean rule for target.
-assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-.PHONY : assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_py.dir
@@ -2538,6 +2769,33 @@ assignment2_part1/CMakeFiles/tf_generate_messages_nodejs.dir/clean:
 .PHONY : assignment2_part1/CMakeFiles/tf_generate_messages_nodejs.dir/clean
 
 #=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target gazebo_msgs_generate_messages_cpp"
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_cpp: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_cpp
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
 # Target rules for target assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -2592,31 +2850,58 @@ assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : assignment2_part1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir
+# Target rules for target assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all:
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/depend
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target _assignment2_part1_generate_messages_check_deps_PlanningAction"
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/rule: cmake_check_build_system
+assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/rule
+.PHONY : assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-_assignment2_part1_generate_messages_check_deps_PlanningAction: assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/rule
+geometry_msgs_generate_messages_nodejs: assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : _assignment2_part1_generate_messages_check_deps_PlanningAction
+.PHONY : geometry_msgs_generate_messages_nodejs
 
 # clean rule for target.
-assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/clean:
-	$(MAKE) -f assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/build.make assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/clean
-.PHONY : assignment2_part1/CMakeFiles/_assignment2_part1_generate_messages_check_deps_PlanningAction.dir/clean
+assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/gaz_ws/build/CMakeFiles --progress-num= "Built target gazebo_msgs_generate_messages_eus"
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/gaz_ws/build/CMakeFiles 0
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_eus: assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_eus
+
+# clean rule for target.
+assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/clean
+.PHONY : assignment2_part1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
 # Target rules for target assignment_2_2024/CMakeFiles/assignment_2_2024_generate_messages_py.dir
